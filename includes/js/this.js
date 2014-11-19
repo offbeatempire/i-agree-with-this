@@ -32,7 +32,7 @@ iawt(document).ready(function() {
 	iawt('.ucc-iawt-this').on('click', function(event) {
 		event.preventDefault();
 
-		inline = iawt(event.target).parent().parent();
+		inline = iawt(event.target).parent();
 		comment = inline.find('input.ucc-iawt-comment').val();
 		nonce = inline.find('input.ucc-iawt-nonce').val();
 		mode = inline.find('input.ucc-iawt-mode').val();

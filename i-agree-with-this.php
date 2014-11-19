@@ -83,7 +83,7 @@ class UCC_I_Agree_With_This {
 
 		$count_text = apply_filters( 'ucc_iawt_this_count', sprintf( _n( '%d person agrees.', '%d people agree.', $count, 'i-agree-with-this' ), $count ), $count );
 
-		$form = "<form action='' method='post'><input type='submit' name='ucc_iawt_this' value='{$this_text}' class='ucc-iawt-this' /> {$count_text} <input type='hidden' name='ucc_iawt_comment' value='{$comment_id}' class='ucc-iawt-comment' /><input type='hidden' name='ucc_iawt_nonce' value='{$nonce}' class='ucc-iawt-nonce' />";
+		$form = "<form action='' method='post'><input type='submit' name='ucc_iawt_this' value='{$this_text}' class='btn ucc-iawt-this' /> {$count_text} <input type='hidden' name='ucc_iawt_comment' value='{$comment_id}' class='ucc-iawt-comment' /><input type='hidden' name='ucc_iawt_nonce' value='{$nonce}' class='ucc-iawt-nonce' />";
 		if ( $mode == 'add' )
 			$form .= "<input type='hidden' name='ucc_iawt_mode' value='add' class='ucc-iawt-mode' />";
 		else
