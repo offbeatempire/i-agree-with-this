@@ -88,6 +88,8 @@ class UCC_I_Agree_With_This {
 			$form .= "<input type='hidden' name='ucc_iawt_mode' value='add' class='ucc-iawt-mode' />";
 		else
 			$form .= "<input type='hidden' name='ucc_iawt_mode' value='delete' class='ucc-iawt-mode' />";
+
+		$form .= "</form>";
 		return apply_filters( 'ucc_iawt_get_form', $form, $mode, $comment_id );
 	}
 
