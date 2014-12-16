@@ -2,7 +2,7 @@
 /*
 Plugin Name: I Agree With This 
 Description: Allow users to agree with comments using AJAX/form submission. 
-Version: 0.5
+Version: 0.6
 Author: Jennifer M. Dodd
 Author URI: http://uncommoncontent.com/
 Textdomain: i-agree-with-this
@@ -37,7 +37,7 @@ class UCC_I_Agree_With_This {
 
 	public function __construct() {
 		self::$instance = $this;
-		$this->version = '2012060201';
+		$this->version = '20141216';
 
 		$this->this_text = apply_filters( 'ucc_iawt_this_text', __( 'This!', 'i-agree-with-this' ) );
 		$this->unthis_text = apply_filters( 'ucc_iawt_unthis_text', __( 'Unthis!', 'i-agree-with-this' ) );
